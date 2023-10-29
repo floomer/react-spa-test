@@ -48,8 +48,10 @@ export const EditUserPage = () => {
     <div className={classes['edit-user']}>
       {visible && <Modal visible={visible} onClose={handleClose} />}
       <div className={classes['edit-user__header']}>
-        <button className={classes['edit-user__header-btn']} onClick={() => navigate('/')}></button>
-        <span className={classes['edit-user__header-title']}>Назад</span>
+        <div className={classes['edit-user__header-back']} onClick={() => navigate('/')}>
+          <button className={classes['edit-user__header-btn']}></button>
+          <span className={classes['edit-user__header-title']}>Назад</span>
+        </div>
       </div>
       {isLoading ? (
         <Loader />

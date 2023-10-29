@@ -5,6 +5,12 @@
     align-items: center;
     padding: 20px 0;
     margin: 0 140px;
+    .edit-user__header-back{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
     .edit-user__header-btn{
       display: flex;
       width: 28px;
@@ -28,7 +34,7 @@
   }
   .edit-user__data{
     display: inline-flex;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 40px;
     .edit-user__data-settings{
       display: flex;
@@ -119,6 +125,9 @@
     width: 343px;
     height: 50px;
     padding: 6px 4px 6px 8px;
+    .edit-user__header-btn{
+      background-image: url('../../assets/Caret_down.svg');
+    }
     .edit-user__header-title{
       font-size: 16px;
     }

@@ -20,7 +20,9 @@ export const BorderedInput = (props: any) => {
         placeholder={props.label}
         onFocus={handleFocus}
         {...field}
-        onBlur={() => setIsFocused(false)}
+        onBlur={() => {
+          setIsFocused(false);
+        }}
       />
       {fieldState.error && (
         <span className={classes['input__error']}>{fieldState.error.message}</span>
@@ -29,7 +31,10 @@ export const BorderedInput = (props: any) => {
         <img
           src={crossIcon}
           className={classes['input__icon']}
-          onClick={() => methods.setValue(field.name, '')}
+          onMouseDown={(e) => {
+            e.preventDefault();
+            methods.setValue(field.name, '');
+          }}
         />
       ) : null}
     </div>
