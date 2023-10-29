@@ -1,0 +1,17 @@
+@use "../../../styles/colors.scss" as colors;
+.loader{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px dashed colors.$colorAccent;
+  animation: rotate 3s infinite linear;
+  margin: 100px auto;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

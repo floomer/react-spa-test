@@ -1,0 +1,62 @@
+@use "../../styles/colors.scss" as colors;
+.users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 140px;
+    .users__title{
+        width: 100%;
+        border-bottom: 1px solid colors.$color04;
+        margin-bottom: 28px;
+        padding-bottom: 16px;
+        padding-top: 40px;
+        .users__title-text{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+.users__active{
+    width: 100%;
+    height: 25%;
+}
+
+.users__active-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 40px;
+}
+.users__archive{
+    width: 100%;
+    height: 25%;
+}
+.users__archive-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 40px;
+}
+@media screen and (max-width: 1152px) {
+    .users{
+    margin: 0 80px;
+    }
+    .users__active-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .users{
+        margin: 0 16px 0 15px;
+        .users__title{
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            padding-top: 32px;
+        }
+    }
+}
+

@@ -1,0 +1,57 @@
+@use "../../../../styles/colors.scss" as colors;
+.input{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+    .input__label{
+      flex: 1 0 0;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: colors.$color01;
+    }
+  .input__field{
+    display: flex;
+    height: 42px;
+    padding: 0 8px 0 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 50px;
+    border: 2px solid  colors.$color04;
+    font-size: 16px;
+    &:focus{
+        outline: none;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: colors.$color02;
+    }
+  }
+  .input__icon{
+    cursor: pointer;
+    position: absolute;
+    right: 13px;
+    top: 41px;
+  }
+  .input__error{
+    color: red;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .input{
+    gap: 8px;
+    .input__label{
+      font-size: 16px;
+    }
+    .input__field{
+      gap: 8px;
+      font-size: 14px;
+    }
+  }
+}

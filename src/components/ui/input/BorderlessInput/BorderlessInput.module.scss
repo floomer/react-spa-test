@@ -1,0 +1,36 @@
+@use "../../../../styles/colors.scss" as colors;
+.borderless-input{
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid colors.$color03;
+
+  .borderless-input__field{
+    color: colors.$color03;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    align-self: stretch;
+    padding-bottom: 12px;
+    outline: none;
+    &:hover::placeholder{
+      color: colors.$colorAccent
+    }
+    &:focus{
+      color: colors.$color01;
+    }
+
+  }
+}
+@media screen and (max-width: 1152px) {
+  .borderless-input{
+    gap: 8px;
+    .borderless-input__field{
+      font-size: 14px;
+    }
+  }
+}

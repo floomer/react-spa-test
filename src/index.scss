@@ -1,0 +1,15 @@
+@use "./styles/colors.scss" as colors;
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: colors.$color05;
+  font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+}

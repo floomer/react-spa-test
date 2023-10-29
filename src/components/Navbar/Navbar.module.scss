@@ -1,0 +1,71 @@
+@use "../../styles/colors.scss" as colors;
+
+.navbar{
+  position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    padding: 16px 150px;
+    align-items: center;
+    .navbar__company-info{
+       display:flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-family: Inter, serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.5px;
+          &:nth-last-child(1){
+            color: #333153;
+            font-weight: 700;
+            line-height: 19.5px;
+          }
+        }
+        img {
+            margin-right: 8px;
+        }
+    }
+  .navbar__user-block{
+    display: flex;
+    .navbar__user-actions{
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      img{
+        margin-left: 4px;
+      }
+    }
+    .navbar__user-profile{
+      display:flex;
+      margin-left: 20px;
+      img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+      }
+      span{
+        font-family: Monrope,serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar{
+    padding: 11px 46px;
+  }
+  .navbar__user-actions img{
+    display: none;
+  }
+}
+@media  screen and (max-width: 768px) {
+  .navbar__user-profile{
+    & span{
+      display: none;
+    }
+  }
+}

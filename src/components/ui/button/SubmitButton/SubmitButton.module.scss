@@ -1,0 +1,28 @@
+@use "../../../../styles/colors" as colors;
+
+.sub-button{
+    display: inline-flex;
+    padding: 12px 42px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 50px;
+    background: colors.$color01;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: colors.$color06;
+    &:hover{
+        background-color: colors.$color05;
+        color: colors.$color02;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .sub-button{
+        align-self: stretch;
+        font-size: 14px;
+    }
+}
+

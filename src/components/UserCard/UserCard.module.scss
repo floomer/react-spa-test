@@ -1,0 +1,113 @@
+@use "../../styles/colors.scss" as colors;
+
+.user-card{
+    position: relative;
+    display: flex;
+    border-radius: 16px;
+    padding: 24px 48px 24px 24px;
+    background-color: colors.$color06;
+    width: 360px;
+    min-height: 168px;
+    gap: 20px;
+
+    .user-card__avatar{
+        width: 112px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+    .user-card__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .user-card__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .user-card__info-name{
+            display: block;
+            color: colors.$colorAccent;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+        .user-card__info-company{
+            font-weight: 500;
+            font-size: 16px;
+            color: colors.$color02;
+        }
+        .user-card__location{
+            color: colors.$color03;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .user-card__actions{
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+}
+.user-card__archive{
+    .user-card__img{
+        filter: grayscale(90%);
+    }
+    .user-card__info {
+        .user-card__info-name {
+            color: colors.$color02;
+        }
+
+        .user-card__info-company {
+            color: colors.$color03;
+        }
+
+        .user-card__location {
+            color: colors.$color04;
+        }
+
+    }
+}
+@media screen and (max-width: 1024px) {
+    .user-card{
+        width: 162px;
+        min-height: 242px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        .user-card__avatar{
+            width: 130px;
+            height: 120px;
+        }
+        .user-card__info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            align-self: stretch;
+            margin-left: 0;
+
+            .user-card__info-name{
+                font-size: 18px;
+            }
+            .user-card__info-company{
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .user-card__location{
+                font-size: 10px;
+                line-height:normal;
+            }
+        }
+        .user-card__actions{
+            position: absolute;
+            right: 9px;
+            top: 149px;
+        }
+    }
+}
+

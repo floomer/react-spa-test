@@ -1,0 +1,29 @@
+@use "./styles/colors.scss" as colors;
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  * {
+    box-sizing: border-box;
+  }
+  .wrapper{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header{
+    position: relative;
+    height: 56px;
+    &:before{
+      position: absolute;
+        content: '';
+        width: 200%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+      background-color: white;
+      transform: translateX(-50%);
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+.drop-button{
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    padding:0;
+    background-image: url('../../../../assets/Dropdown/Desktop/dropdown_default.svg');
+    &:hover{
+      background-image: url('../../../../assets/Dropdown/Desktop/dropdown_hover.svg');
+    }
+    &:active{
+        background-image: url('../../../../assets/Dropdown/Desktop/dropdown_tap.svg');
+    }
+}
+@media screen and (max-width: 768px) {
+    .drop-button{
+        background-image: url('../../../../assets/Dropdown/Mobile/Mdropdown_default.svg');
+        &:active{
+            background-image: url('../../../../assets/Dropdown/Mobile/Mdropdown_tap.svg');
+        }
+    }
+}
