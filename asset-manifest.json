@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-spa-test/static/css/main.39a93615.css",
-    "main.js": "/react-spa-test/static/js/main.c8176f63.js",
+    "main.css": "/react-spa-test/static/css/main.180c2a5d.css",
+    "main.js": "/react-spa-test/static/js/main.b5f234b5.js",
     "static/media/user_photo.jpg": "/react-spa-test/static/media/user_photo.2489da5358c55dad0277.jpg",
     "static/media/logo-sign.svg": "/react-spa-test/static/media/logo-sign.f85174ce81d685e32de12a5aeed2b489.svg",
     "static/media/notification.svg": "/react-spa-test/static/media/notification.851fa2717216e08cd3ca0fada0d9230f.svg",
@@ -14,12 +14,13 @@
     "index.html": "/react-spa-test/index.html",
     "static/media/dropdown_hover.svg": "/react-spa-test/static/media/dropdown_hover.a1d92a0aded6febf6478.svg",
     "static/media/dropdown_tap.svg": "/react-spa-test/static/media/dropdown_tap.b80f6cefc87e26691bc1.svg",
-    "static/media/arrow-left.svg": "/react-spa-test/static/media/arrow-left.b556fbb0cdecc2bf4d3a.svg",
-    "main.39a93615.css.map": "/react-spa-test/static/css/main.39a93615.css.map",
-    "main.c8176f63.js.map": "/react-spa-test/static/js/main.c8176f63.js.map"
+    "static/media/Caret_down.svg": "/react-spa-test/static/media/Caret_down.68ff5a82b216a6ce6088.svg",
+    "static/media/arrow-left.svg": "/react-spa-test/static/media/arrow-left.903205979802fd73533b.svg",
+    "main.180c2a5d.css.map": "/react-spa-test/static/css/main.180c2a5d.css.map",
+    "main.b5f234b5.js.map": "/react-spa-test/static/js/main.b5f234b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.39a93615.css",
-    "static/js/main.c8176f63.js"
+    "static/css/main.180c2a5d.css",
+    "static/js/main.b5f234b5.js"
   ]
 }
