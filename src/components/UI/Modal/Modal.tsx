@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Modal.module.scss';
 import classNames from 'classnames';
-import SuccessIcon from '../../../assets/Checked-box.svg';
-import crossIcon from '../../../assets/Cross.svg';
+import SuccessIcon from '../../../assets/checked_box.svg';
+import crossIcon from '../../../assets/cross.svg';
 import { useNavigate } from 'react-router-dom';
 interface ModalProps {
   visible: boolean;

@@ -3,7 +3,7 @@ import { UserCard } from '../../components/UserCard/UserCard';
 import classes from './UserListPage.module.scss';
 import { useFetching } from '../../hooks/useFetching';
 import { UserService } from '../../api/userService';
-import { Loader } from '../../components/ui/loader/Loader';
+import { Loader } from '../../components/UI/Loader/Loader';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { addUser } from '../../store/user/userSlice';
 import { getUniqueUsers } from '../../utils/getUniqueUsers';

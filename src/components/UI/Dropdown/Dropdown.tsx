@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import classes from './Dropdown.module.scss';
 import classNames from 'classnames';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../../hooks/redux';
 import { archiveUser, hideUser, unArchiveUser } from '../../../store/user/userSlice';
 

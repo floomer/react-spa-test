@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './BorderedInput.module.scss';
-import crossIcon from '../../../../assets/Cross.svg';
+import crossIcon from '../../../../assets/cross.svg';
 import { useController, useFormContext } from 'react-hook-form';
 
 export const BorderedInput = (props: any) => {

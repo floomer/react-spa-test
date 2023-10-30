@@ -3,16 +3,16 @@ import classes from './EditUserPage.module.scss';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import userPhoto from '../../assets/user_photo.jpg';
-import { BorderedInput } from '../../components/ui/input/BorderedInput/BorderedInput';
-import { SubmitButton } from '../../components/ui/button/SubmitButton/SubmitButton';
-import { BorderlessInput } from '../../components/ui/input/BorderlessInput/BorderlessInput';
+import { BorderedInput } from '../../components/UI/Input/BorderedInput/BorderedInput';
+import { SubmitButton } from '../../components/UI/Button/SubmitButton/SubmitButton';
+import { BorderlessInput } from '../../components/UI/Input/BorderlessInput/BorderlessInput';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { useFetching } from '../../hooks/useFetching';
 import { UserService } from '../../api/userService';
 import { addOneUser, editUser } from '../../store/user/userSlice';
-import { Loader } from '../../components/ui/loader/Loader';
+import { Loader } from '../../components/UI/Loader/Loader';
 import { IUser } from '../../types/IUser';
-import { Modal } from '../../components/ui/modal/Modal';
+import { Modal } from '../../components/UI/Modal/Modal';
 
 export const EditUserPage = () => {
   const navigate = useNavigate();

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import classes from './UserCard.module.scss';
 import { IUser } from '../../types/IUser';
 import userPhoto from '../../assets/user_photo.jpg';
-import { DropdownButton } from '../ui/button/DropdownButton/DropdownButton';
+import { DropdownButton } from '../UI/Button/DropdownButton/DropdownButton';
 import classNames from 'classnames';
-import { Dropdown } from '../ui/dropdown/Dropdown';
+import { Dropdown } from '../UI/Dropdown/Dropdown';
 
 interface UserCardProps {
   user: IUser;

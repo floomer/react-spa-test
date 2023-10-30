@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Navbar.module.scss';
-import Logo from '../../assets/logo-sign.svg';
+import Logo from '../../assets/logo_sign.svg';
 import favorite from '../../assets/favorite.svg';
 import notification from '../../assets/notification.svg';
 import userPhoto from '../../assets/user_photo.jpg';
